@@ -10,7 +10,7 @@ import {
 } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
-const person = {
+const person: Person = {
   firstName: "Avnish",
   lastName: "Singh",
   name: "Avnish Singh",
@@ -27,7 +27,7 @@ const newsletter = {
   description: <>My weekly newsletter about engineering</>,
 };
 
-const social = [
+const social: Social = [
   {
     name: "GitHub",
     icon: "github",
@@ -48,7 +48,7 @@ const social = [
   },
 ];
 
-const home = {
+const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
@@ -77,7 +77,7 @@ const home = {
   ),
 };
 
-const about = {
+const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
@@ -196,21 +196,21 @@ const about = {
 };
 
 // Kept empty to prevent compiler errors, but safe to ignore
-const blog = {
+const blog: Blog = {
   path: "/blog",
   label: "Blog",
   title: "",
   description: "",
 };
 
-const work = {
+const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Projects by ${person.name}`,
 };
 
-const gallery = {
+const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: "",
